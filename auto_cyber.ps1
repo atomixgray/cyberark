@@ -1,4 +1,4 @@
-#Automate CyberARK Safe Creation Process
+#Automate Onboarding process.
 # At0mix
 # Created 3/1/2020
 
@@ -35,7 +35,7 @@ Add-PASSafeMember -SafeName $safename -MemberName CASYS_CYBADM -SearchIn Vault -
 Add-PASSafeMember -SafeName $safename -MemberName $vaultadmin -SearchIn Vault -UseAccounts $true -ListAccounts $true -RetrieveAccounts $true -AddAccounts $true -UpdateAccountProperties $true -InitiateCPMAccountManagementOperations $true -SpecifyNextAccountContent $true -RenameAccounts $true -DeleteAccounts $true -UnlockAccounts $true -ManageSafe $true -ManageSafeMembers $true -BackupSafe $true -ViewAuditLog  $true -ViewSafeMembers $true -RequestsAuthorizationLevel $true -AccessWithoutConfirmation $true -CreateFolders $true -DeleteFolders $true -MoveAccountsAndFolders $true -UpdateAccountContent $true
 
 # Add Users Admin account
-Add $useradmin
+#Add $useradmin
 
 
 
