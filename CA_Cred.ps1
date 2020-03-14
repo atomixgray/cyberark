@@ -14,15 +14,15 @@ $username = Read-Host "Enter Admin account ID"
 $server = Read-Host "Enter Server your connecting to"
 $safename = "CA_U_alark002"
 
-$test = Get-AIMCredential -AppID RESTAPI -Safe $safename -UserName $username -RequiredProps Username, address
+$grab = Get-AIMCredential -AppID RESTAPI -Safe $safename -UserName $username -RequiredProps Username, address
 
 #Add the password to Clipboard
-Set-Clipboard -Value $test.password
+Set-Clipboard -Value $grab.password
 
 
 #Show Info on Screen
-$test.Username
-$test.Password
+$grab.Username
+$grab.Password
 
 #Launch RDP Connection
 mstsc /v:$server
