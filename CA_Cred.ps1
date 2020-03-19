@@ -25,4 +25,4 @@ $grab.Username
 $grab.Password
 
 #Launch RDP Connection
-mstsc /v:$server
+mstsc /v:$server /user:$grab.Username /pass:$grab.Password
